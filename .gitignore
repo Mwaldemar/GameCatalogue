@@ -1,0 +1,63 @@
+# ===================================================================
+# Standard .NET / Visual Studio .gitignore file
+#
+# Kilde: https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+# ===================================================================
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# ===================================================================
+# VIGTIGT: Hemmeligheder og lokale indstillinger
+# Disse filer må ALDRIG committes.
+#
+# Den generelle appsettings.json er OK at committe, da den
+# indeholder standardindstillinger, men IKKE udviklings-specifikke.
+# ===================================================================
+appsettings.Development.json
+secrets.json
+*.secrets.json
+
+# Database-filer (hvis du bruger en lokal fil-database som SQLite)
+# Din games.db er en lokal udviklingsdatabase. Den bør ikke være i Git.
+# Hver udvikler (eller server) skal have sin egen database.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Visual Studio / IDE cache files
+.vs/
+.vscode/
+# ReSharper is a control freak!
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Mac and Linux folder attributes
+.DS_Store
+._*
+Thumbs.db
+
+# Rider IDE
+.idea/
+
+# EF Core migrations temp file
+*.*.Designer.cs.bak
