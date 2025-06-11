@@ -96,6 +96,7 @@ namespace GameAPI.Services
             if (patchDto.Studio != null) game.Studio = patchDto.Studio;
             if (patchDto.PriceOnLaunch.HasValue) game.PriceOnLaunch = patchDto.PriceOnLaunch.Value;
             if (patchDto.ImageUrl != null) game.ImageUrl = patchDto.ImageUrl;
+            if (patchDto.Description != null) game.Description = patchDto.Description;
 
             if (patchDto.TagIds != null)
             {
