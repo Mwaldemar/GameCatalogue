@@ -21,6 +21,7 @@ export interface TagCreateDto {
 export interface GameReadDto {
   id: number;
   title: string;
+  description?: string;
   releaseYear: number;
   type: string;
   studio?: string; // Valgfri (nullable i C#)
@@ -32,6 +33,7 @@ export interface GameReadDto {
 /** Data vi sender, når vi vil oprette et nyt spil. */
 export interface GameCreateDto {
   title: string;
+  description?: string;
   releaseYear: number;
   type: string;
   studio?: string;
@@ -45,7 +47,7 @@ export interface GameUpdateDto {
   title?: string;
   releaseYear?: number;
   type?: string;
-
+  description?: string;
   studio?: string;
   priceOnLaunch?: number;
   imageUrl?: string;
