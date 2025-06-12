@@ -6,6 +6,8 @@ import { gameService } from '../../services/GameService';
 import type { GameReadDto } from '../../types/api';
 import { formatPrice } from '../../utils/formatting';
 
+//Test comment to verify activity for portfolio site
+
 const formatHeader = (key: string): string => {
     if (key === 'id') return 'ID';
     const withSpaces = key.replace(/([A-Z])/g, ' $1');
